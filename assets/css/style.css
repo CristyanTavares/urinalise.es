@@ -1,0 +1,795 @@
+@font-face{font-family:Figtree Variable;font-style:normal;font-display:swap;font-weight:300 900;src:url(../fonts/figtree-latin-ext-wght-normal.76b41198.woff2) format("woff2-variations");unicode-range:u+0100-02ba,u+02bd-02c5,u+02c7-02cc,u+02ce-02d7,u+02dd-02ff,u+0304,u+0308,u+0329,u+1d00-1dbf,u+1e00-1e9f,u+1ef2-1eff,u+2020,u+20a0-20ab,u+20ad-20c0,u+2113,u+2c60-2c7f,u+a720-a7ff}@font-face{font-family:Figtree Variable;font-style:normal;font-display:swap;font-weight:300 900;src:url(../fonts/figtree-latin-wght-normal.93af595f.woff2) format("woff2-variations");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+0304,u+0308,u+0329,u+2000-206f,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;font-family:Figtree Variable,Arial,sans-serif;color:#102b42;background:#fff;-webkit-font-smoothing:antialiased}a,button,input{font:inherit}a,button{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}img{max-width:100%}button:disabled{cursor:not-allowed}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #00b4cf;outline-offset:5px}::selection{background:#9cf0f4;color:#06253c}h1,h2,h3,p{margin-top:0}h1,h2,h3{text-wrap:balance}p{line-height:1.65}button{touch-action:manipulation}dialog{color:inherit}summary{cursor:pointer}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,:after,:before{animation:none!important;transition:none!important}}
+.ecografia_site__KRik5{--navy:#052a44;--cyan:#00c5dc;--teal:#007f9d;--ink:#102b42;--muted:#586e7f;--line:#dbe6ee;overflow:hidden}.ecografia_container__BN_eR{width:min(1160px,calc(100% - 48px));margin-inline:auto}.ecografia_topbar__Oj6kX{width:min(1160px,calc(100% - 48px));margin:auto;min-height:90px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}.ecografia_brand__ggGLr{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:15px;font-weight:500;letter-spacing:.08em;color:var(--navy)}.ecografia_brand__ggGLr svg{color:var(--teal)}.ecografia_brand__ggGLr b{font-weight:850}.ecografia_brand__ggGLr small{display:block;font-size:9px;letter-spacing:.24em;font-weight:600;margin-top:5px}.ecografia_headerLink__Pg5xz{font-size:13px;text-decoration:none;color:var(--muted)}.ecografia_headerLink__Pg5xz span{margin-left:14px;color:var(--teal)}.ecografia_hero__Dy6lv{text-align:center;padding:50px 0 0;background:linear-gradient(#f8fcff,#fff 53%)}.ecografia_heroPill__bkgnk{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border:1px solid #c4e6ee;border-radius:24px;background:#edfafd;color:#1b637c;font-size:10px;font-weight:750;letter-spacing:.15em}.ecografia_heroPill__bkgnk i{width:6px;height:6px;border-radius:100%;background:#00abc4}.ecografia_hero__Dy6lv h1{font-size:clamp(40px,5.2vw,68px);line-height:1.06;letter-spacing:-.048em;max-width:960px;margin:25px auto 22px;font-weight:800}.ecografia_site__KRik5 em{font-style:normal;color:var(--teal)}.ecografia_heroLead__n_Dbu{font-size:21px;line-height:1.55;max-width:710px;margin:0 auto 20px;color:var(--muted)}.ecografia_heroLead__n_Dbu strong{color:var(--ink);font-weight:600}.ecografia_heroProof__57elE{display:flex;justify-content:center;gap:20px;color:#395769;font-size:12px}.ecografia_heroProof__57elE span+span:before{content:"·";margin-right:20px;color:#00a4bc}.ecografia_heroImage__fHl_v{width:100%;height:auto;display:block;max-width:1100px;margin:20px auto 18px}.ecografia_heroActions__FLevN{display:flex;justify-content:center;align-items:center;gap:28px;margin:0 auto 36px}.ecografia_ctaOutline__S2RQs,.ecografia_cta__TFWPc{display:inline-flex;justify-content:center;align-items:center;gap:30px;min-height:56px;padding:16px 27px;border:1px solid transparent;border-radius:9px;text-decoration:none;font-size:15px;font-weight:750;line-height:1.35;transition:transform .18s,background .18s;cursor:pointer}.ecografia_cta__TFWPc{background:#007f9d;color:#fff;box-shadow:0 6px 18px #037f9d20}.ecografia_cta__TFWPc:hover{background:#056681;transform:translateY(-2px)}.ecografia_ctaOutline__S2RQs{background:#fff;color:var(--navy);border-color:#839eae}.ecografia_ctaOutline__S2RQs:hover{background:#eef7fa}.ecografia_ctaOutline__S2RQs span,.ecografia_cta__TFWPc span{font-size:20px}.ecografia_textLink__o7W_S{font-size:14px;color:#234e66;text-underline-offset:6px}.ecografia_benefitStrip__BAoZ7{display:grid;grid-template-columns:repeat(4,1fr);padding:27px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left}.ecografia_benefitStrip__BAoZ7 span{font-size:13px;display:flex;align-items:center;justify-content:center;gap:10px}.ecografia_benefitStrip__BAoZ7 span+span{border-left:1px solid var(--line)}.ecografia_benefitStrip__BAoZ7 b{font-weight:500;color:var(--teal);font-size:11px}.ecografia_section__31dSq{padding:90px 0;scroll-margin-top:18px}.ecografia_sectionHeading__eW6R0{width:min(840px,calc(100% - 40px));margin:0 auto 40px;text-align:center}.ecografia_eyebrow__8EO_X{display:block;color:var(--teal);font-size:10px;line-height:1.6;letter-spacing:.16em;font-weight:800;margin-bottom:16px}.ecografia_section__31dSq h2{font-size:clamp(30px,3.4vw,44px);letter-spacing:-.04em;line-height:1.14;font-weight:750;margin-bottom:20px}.ecografia_sectionHeading__eW6R0 p{font-size:17px;color:var(--muted);max-width:670px;margin-inline:auto}.ecografia_sectionCta__45kyO{display:grid;justify-items:center;gap:12px;margin:32px 24px 0}.ecografia_sectionCta__45kyO small{color:var(--muted);font-size:11px}.ecografia_softSection__Hh2LQ{background:#f3f8fb;border-block:1px solid #e7eff4}.ecografia_methodGrid__t5k_J{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.ecografia_methodGrid__t5k_J article{padding:26px;background:white;border:1px solid var(--line);border-radius:12px}.ecografia_methodGrid__t5k_J article>span{font-size:12px;color:var(--teal);display:inline-flex;align-items:center;justify-content:center;width:35px;height:35px;border:1px solid #bae4ec;border-radius:50%;margin-bottom:28px}.ecografia_methodGrid__t5k_J h3{font-size:21px;letter-spacing:-.025em;margin-bottom:12px}.ecografia_methodGrid__t5k_J p{font-size:14px;color:var(--muted);margin-bottom:0}.ecografia_darkSection__nBEbS{background:#062a43;color:white;position:relative}.ecografia_darkSection__nBEbS:after{content:"";position:absolute;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,#006dec,#00d6e7 50%,#f44b48)}.ecografia_darkSection__nBEbS .ecografia_eyebrow__8EO_X,.ecografia_darkSection__nBEbS em{color:#69e3ed}.ecografia_painGrid__3uv7D{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.ecografia_painGrid__3uv7D>div>p{color:#b8d0df;font-size:17px}.ecografia_lightLink__r72yK{color:#76e6ef;font-size:14px;text-underline-offset:6px}.ecografia_painCards__CzOf0{display:grid;gap:14px}.ecografia_painCards__CzOf0 article{border:1px solid #315269;border-radius:10px;padding:24px;background:#0e344d}.ecografia_painCards__CzOf0 span{font-size:9px;font-weight:700;letter-spacing:.17em;color:#71d8e7}.ecografia_painCards__CzOf0 h3{font-size:20px;line-height:1.3;margin:12px 0 10px;letter-spacing:-.02em}.ecografia_painCards__CzOf0 p{margin:0;color:#b5cddc;font-size:14px}.ecografia_productRow__rC3yY{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;padding:34px 0 52px;border-bottom:1px solid var(--line)}.ecografia_productRow__rC3yY+.ecografia_productRow__rC3yY{padding-top:52px}.ecografia_productReverse__C5U7i .ecografia_productImage__0vhmx{order:2}.ecografia_productImage__0vhmx img{display:block;width:100%;height:auto}.ecografia_productCopy__eTNKg h3{font-size:31px;line-height:1.16;letter-spacing:-.035em;margin-bottom:22px}.ecografia_productCopy__eTNKg>strong{display:block;font-size:17px;line-height:1.45;font-weight:600;margin-bottom:16px}.ecografia_productCopy__eTNKg p{color:var(--muted);font-size:15px;margin-bottom:22px}.ecografia_checkList__a4bGu{list-style:none;padding:0;margin:0 0 24px}.ecografia_checkList__a4bGu li{position:relative;padding-left:25px;font-size:14px;line-height:1.5;margin:12px 0}.ecografia_checkList__a4bGu li:before{content:"✓";position:absolute;left:0;top:0;color:var(--teal);font-weight:750}.ecografia_pageBadge__uFjoL{display:inline-block;padding:9px 13px;border-radius:5px;background:#edf7fa;color:#21617b;font-size:9px;letter-spacing:.1em;font-weight:750}.ecografia_audienceGrid__dwuwT{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:960px;margin:auto}.ecografia_audienceGrid__dwuwT>div{display:flex;align-items:center;gap:18px;border:1px solid #dbe6ee;background:#fff;border-radius:10px;padding:23px;font-size:16px;line-height:1.5}.ecografia_audienceGrid__dwuwT span{display:flex;align-items:center;justify-content:center;flex:0 0 28px;height:28px;border-radius:50%;background:#e8f9fa;color:var(--teal)}.ecografia_educationalNote__Y223U{font-size:12px;color:var(--muted);max-width:760px;text-align:center;margin:28px auto 0}.ecografia_bonusGrid__bE6KG{display:grid;grid-template-columns:1fr 1fr;gap:28px}.ecografia_bonusCard__Kn__P{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}.ecografia_bonusTop__z8Klu{display:flex;justify-content:space-between;padding:20px 25px;border-bottom:1px solid #e8eff3;font-size:10px;color:#346278;letter-spacing:.08em;font-weight:750}.ecografia_bonusCard__Kn__P>img{display:block;width:100%;height:auto}.ecografia_bonusCard__Kn__P>div:last-child{padding:4px 30px 30px}.ecografia_bonusCard__Kn__P h3{font-size:26px;letter-spacing:-.025em;line-height:1.18;margin-bottom:15px}.ecografia_bonusCard__Kn__P strong{font-size:15px;font-weight:600;line-height:1.5;display:block}.ecografia_bonusCard__Kn__P p{font-size:14px;color:var(--muted);margin:12px 0 0}.ecografia_galleryHeading__17Yo8{text-align:center;margin:60px 20px 20px}.ecografia_galleryHeading__17Yo8 h3{font-size:23px;font-weight:600;letter-spacing:-.025em}.ecografia_workflow__9a2CY{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.ecografia_workflow__9a2CY>div{border-top:1px solid #a9c9d8;padding-top:22px}.ecografia_workflow__9a2CY b{color:var(--teal);font-size:13px;font-weight:600}.ecografia_workflow__9a2CY h3{font-size:20px;letter-spacing:-.025em;margin:25px 0 10px}.ecografia_workflow__9a2CY p{color:var(--muted);font-size:14px;margin:0}.ecografia_offerSection__0xVuG{background:#061f34;color:white}.ecografia_offerSection__0xVuG .ecografia_sectionHeading__eW6R0 .ecografia_eyebrow__8EO_X{color:#75dce9}.ecografia_offerSection__0xVuG .ecografia_sectionHeading__eW6R0 em{color:#76e3ed}.ecografia_offerSection__0xVuG .ecografia_sectionHeading__eW6R0 p{color:#b5cddd}.ecografia_planGrid__hvvtA{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch;margin-top:60px}.ecografia_plan__m2817{position:relative;display:flex;flex-direction:column;padding:35px;border-radius:18px;background:#fff;color:var(--ink);border:2px solid #fff}.ecografia_planFull__2bTN_{border-color:#2ccadc}.ecografia_recommended__Ishmr{position:absolute;left:50%;top:0;transform:translate(-50%,-50%);background:#0b7993;border:1px solid #4ad3e4;box-shadow:0 4px 12px #01243e30;border-radius:30px;padding:10px 18px;color:white;font-size:9px;font-weight:800;letter-spacing:.08em;white-space:nowrap}.ecografia_plan__m2817 h3{font-size:31px;line-height:1.1;letter-spacing:-.04em;margin:0 0 18px}.ecografia_plan__m2817>p{font-size:14px;line-height:1.6;color:var(--muted);min-height:45px;margin:0 0 20px}.ecografia_planVisual__ESxiG{border:1px solid #e3ebf0;border-radius:10px;overflow:hidden;background:#fff;margin-bottom:22px}.ecografia_planVisual__ESxiG>img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}.ecografia_miniBonuses__EJKJZ{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;padding:5px 12px 15px}.ecografia_miniBonuses__EJKJZ>div{text-align:center;min-width:0}.ecografia_miniBonuses__EJKJZ img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}.ecografia_miniBonuses__EJKJZ span{display:block;font-size:9px;line-height:1.35;padding:0 4px;color:#31566c}.ecografia_planCount__lswPB{display:flex;align-items:center;gap:14px;border-block:1px solid #e1eaf0;padding:18px 0;margin-bottom:10px}.ecografia_planCount__lswPB strong{font-size:44px;line-height:1;color:var(--teal);font-weight:550;letter-spacing:-.04em}.ecografia_planCount__lswPB span{font-size:10px;letter-spacing:.06em;line-height:1.7;font-weight:650}.ecografia_plan__m2817 .ecografia_checkList__a4bGu{margin-bottom:30px}.ecografia_priceBlock__pTBb0{margin-top:auto;border-top:1px solid #dce7ee;padding-top:28px;text-align:center}.ecografia_priceBlock__pTBb0>span{font-size:11px;color:var(--muted)}.ecografia_price__2vGHF{font-size:64px;line-height:1.15;letter-spacing:-.06em;color:var(--navy);font-weight:750;margin:10px 0 0;display:flex;align-items:baseline;justify-content:center;gap:10px}.ecografia_price__2vGHF small{font-size:20px;letter-spacing:-.03em;font-weight:500}.ecografia_priceBlock__pTBb0 p{font-size:12px;color:var(--muted);margin:5px 0 23px}.ecografia_priceBlock__pTBb0 button{width:100%;font-size:14px;padding-inline:15px;gap:15px}.ecografia_paymentNote__ZggYV{display:block;margin-top:13px;font-size:10px;color:var(--muted)}.ecografia_offerFootnote__xwQ_H{font-size:11px;color:#a6c1d1;max-width:800px;margin:28px auto 0;text-align:center}.ecografia_faqGrid__0Epca{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px}.ecografia_faqGrid__0Epca>div>p{color:var(--muted);font-size:15px;max-width:320px}.ecografia_faqItem__frnvC{border-bottom:1px solid #dce6ed;padding:22px 0}.ecografia_faqItem__frnvC:first-child{padding-top:0}.ecografia_faqItem__frnvC summary{list-style:none;font-weight:650;font-size:16px;display:flex;justify-content:space-between;gap:20px;line-height:1.5}.ecografia_faqItem__frnvC summary::-webkit-details-marker{display:none}.ecografia_faqItem__frnvC summary span{color:var(--teal);font-size:23px;font-weight:400;line-height:1}.ecografia_faqItem__frnvC[open] summary span{transform:rotate(45deg)}.ecografia_faqItem__frnvC p{font-size:14px;color:var(--muted);margin:18px 25px 0 0}.ecografia_footer___j6HF{background:#f2f7fa;border-top:1px solid var(--line);padding:45px 0}.ecografia_footer___j6HF p{font-size:14px;color:var(--muted);margin:24px 0}.ecografia_footerLine__HuLyL{display:flex;justify-content:space-between;gap:24px;font-size:12px;border-block:1px solid var(--line);padding:20px 0;margin-bottom:25px;color:#416176}.ecografia_footerLine__HuLyL a{text-decoration:none}.ecografia_footer___j6HF small{font-size:10px;line-height:1.65;color:#698193;display:block;max-width:900px}.ecografia_footer___j6HF .ecografia_brand__ggGLr small{font-size:9px}.ecografia_upgradeDialog__O_sKn{margin:auto;width:min(580px,calc(100vw - 28px));max-height:92dvh;padding:0;border:1px solid #5b9bad;border-radius:18px;background:white;color:var(--ink);box-shadow:0 20px 90px #00112088}.ecografia_upgradeDialog__O_sKn::backdrop{background:#041724d9;backdrop-filter:blur(4px)}.ecografia_upgradeDialog__O_sKn[open]{animation:ecografia_modalEnter__4sYaL .25s ease-out}.ecografia_upgradePanel__6f340{position:relative;padding:36px}.ecografia_modalClose__xZkps{position:absolute;right:13px;top:8px;font-size:28px;line-height:1;padding:7px 10px;border:0;background:none;color:#507285}.ecografia_upgradePanel__6f340 h2{font-size:30px;line-height:1.12;letter-spacing:-.035em;margin-bottom:20px}.ecografia_upgradePanel__6f340>img{width:100%;height:auto;border-radius:10px}.ecografia_upgradePanel__6f340>p{font-size:14px;color:var(--muted);margin:18px 0}.ecografia_modalPrice___E9nn{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-top:1px solid var(--line);font-size:14px}.ecografia_modalPrice___E9nn strong{font-size:24px;color:var(--teal);letter-spacing:-.03em}.ecografia_pending__g9KFT{padding:16px;border:1px solid #d1e5ef;background:#edf7fa;border-radius:8px;text-align:center;font-size:14px;line-height:1.5}.ecografia_upgradePanel__6f340>.ecografia_cta__TFWPc{width:100%}.ecografia_upgradePanel__6f340>small{display:block;text-align:center;font-size:10px;color:var(--muted);margin-top:20px}.ecografia_basicContinue__yjbiT{margin-top:20px;font-size:12px}.ecografia_basicContinue__yjbiT summary{text-align:center;text-decoration:underline;text-underline-offset:3px;list-style:none;margin-bottom:15px}.ecografia_basicContinue__yjbiT summary::-webkit-details-marker{display:none}@keyframes ecografia_modalEnter__4sYaL{0%{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}.ecografia_gallery__FgeDv{position:relative;overflow:hidden;margin:38px 0 18px;padding:15px 0 35px}.ecografia_galleryTrack__8UtCe{display:flex;width:max-content;gap:20px;animation:ecografia_marquee__hJDH2 65s linear infinite;will-change:transform}.ecografia_gallery__FgeDv:focus-within .ecografia_galleryTrack__8UtCe,.ecografia_gallery__FgeDv:hover .ecografia_galleryTrack__8UtCe{animation-play-state:paused}.ecografia_galleryReverse__Z2dHL .ecografia_galleryTrack__8UtCe{animation-direction:reverse}.ecografia_sampleFigure__eZ_1K{width:220px;flex:0 0 220px;margin:0}.ecografia_galleryItem___R8M_{position:relative;display:block;width:100%;aspect-ratio:4/5;border:1px solid #ccdee8;border-radius:7px;overflow:hidden;background:white;box-shadow:0 7px 18px #0a304511}.ecografia_galleryItem___R8M_ img{object-fit:contain}.ecografia_sampleFigure__eZ_1K figcaption{font-size:11px;line-height:1.4;text-align:center;color:#46677b;margin-top:11px;padding:0 5px;max-width:220px}.ecografia_galleryLabel__EmWG5{text-align:center;margin-top:25px;font-size:9px;letter-spacing:.16em;font-weight:750}@keyframes ecografia_marquee__hJDH2{to{transform:translateX(calc(-50% - 10px))}}.ecografia_ebookPreview__C9Fh6{overflow:hidden;padding:18px;border:1px solid #21455d;border-radius:20px;color:#fff;background:#082b43;box-shadow:0 18px 50px #07345420}.ecografia_ebookPreviewTopline__HCE83{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:4px 7px 16px}.ecografia_ebookPreviewTopline__HCE83 span{color:#83eaf0;font-size:10px;font-weight:750;letter-spacing:.13em}.ecografia_ebookPreviewTopline__HCE83 small{color:#bdd2df;font-size:11px}.ecografia_ebookStage__32Woa{position:relative;height:540px;overflow:hidden;border:1px solid #356075;border-radius:12px;background:radial-gradient(ellipse at 50% 65%,#31596b,#0b3048 75%)}.ecografia_ebookStage__32Woa:focus-visible{outline:2px solid #4ddeed;outline-offset:3px}.ecografia_ebookStageOpen__n2VqR{background:radial-gradient(ellipse at 50% 65%,#3b6172,#0b3048 75%)}.ecografia_ebookCanvas__9UqkE{position:absolute;z-index:2;inset:0}.ecografia_ebookCanvas__9UqkE canvas{display:block;width:100%;height:100%;touch-action:pan-y}.ecografia_ebookLoading__TGwBM{position:absolute;z-index:3;inset:0;display:grid;place-items:center;color:#c6dce7;font-size:12px;letter-spacing:.05em}.ecografia_ebookOpenButton__3L9e1{position:absolute;z-index:5;bottom:18px;left:50%;display:grid;width:204px;min-height:50px;padding:10px 15px;transform:translateX(-50%);place-items:center;border:1px solid #70e1ec;border-radius:9px;color:#042e43;background:#71e8ef;box-shadow:0 10px 25px #00182744;transition:opacity .22s,transform .22s}.ecografia_ebookOpenButton__3L9e1:hover{transform:translateX(-50%) translateY(-2px)}.ecografia_ebookOpenButtonLeaving__iqQJs{opacity:0;pointer-events:none}.ecografia_ebookOpenButton__3L9e1 span{font-size:10px;font-weight:850;letter-spacing:.09em}.ecografia_ebookOpenButton__3L9e1 small{font-size:9px;color:#27526a}.ecografia_ebookCloseButton__TsKJO{position:absolute;z-index:5;top:13px;right:13px;min-height:34px;padding:0 13px;border:1px solid #4c7388;border-radius:25px;color:#e1f0f7;background:#06273de8;font-size:9px;font-weight:750;letter-spacing:.08em}.ecografia_ebookCloseButton__TsKJO:disabled{opacity:.4}.ecografia_ebookHint__vp6HP{position:absolute;z-index:4;top:16px;left:18px;color:#c8e2ef;font-size:9px;letter-spacing:.1em}.ecografia_ebookFallback__f2hQO{position:absolute;z-index:3;inset:30px;display:grid;grid-template-columns:1fr 1fr;place-content:center;gap:4px}.ecografia_ebookFallback__f2hQO img{width:100%;height:auto;object-fit:contain}.ecografia_ebookControls__i_fZE{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:16px 4px 2px}.ecografia_ebookControls__i_fZE button{display:inline-flex;min-height:42px;padding:0 16px;align-items:center;justify-content:center;gap:9px;border:1px solid #426174;border-radius:24px;color:white;background:#193c51;font-size:10px;font-weight:750;letter-spacing:.06em}.ecografia_ebookControls__i_fZE button:first-child{justify-self:start}.ecografia_ebookControls__i_fZE button:last-child{justify-self:end}.ecografia_ebookControls__i_fZE button:hover:not(:disabled){border-color:#82dde7;background:#215167}.ecografia_ebookControls__i_fZE button:disabled{opacity:.3}.ecografia_ebookControlsClosed__RjF3k button{opacity:.2}.ecografia_ebookControls__i_fZE>div{display:grid;justify-items:center;min-width:100px}.ecografia_ebookControls__i_fZE strong{color:#87e5eb;font-size:18px;font-weight:500}.ecografia_ebookControls__i_fZE small{color:#a4c1d2;font-size:9px;letter-spacing:.07em;margin-top:4px}.ecografia_ebookCaption__lpzWV{margin:17px auto 3px;max-width:680px;color:#b1cbdc;font-size:10px;line-height:1.55;text-align:center}@media(max-width:1000px){.ecografia_painGrid__3uv7D{gap:38px}.ecografia_productRow__rC3yY{gap:30px}.ecografia_plan__m2817{padding:28px}.ecografia_productCopy__eTNKg h3{font-size:27px}.ecografia_faqGrid__0Epca{gap:45px}.ecografia_heroProof__57elE{gap:12px}.ecografia_heroProof__57elE span+span:before{margin-right:12px}}@media(max-width:760px){.ecografia_container__BN_eR,.ecografia_topbar__Oj6kX{width:calc(100% - 32px)}.ecografia_topbar__Oj6kX{min-height:76px}.ecografia_brand__ggGLr{font-size:12px;gap:8px}.ecografia_brand__ggGLr svg{width:32px}.ecografia_brand__ggGLr small{font-size:8px}.ecografia_headerLink__Pg5xz{font-size:11px;max-width:105px;line-height:1.45;text-align:right}.ecografia_headerLink__Pg5xz span{margin-left:4px}.ecografia_hero__Dy6lv{padding-top:32px}.ecografia_heroPill__bkgnk{font-size:8px;letter-spacing:.1em;padding:8px 11px}.ecografia_hero__Dy6lv h1{font-size:clamp(34px,7.9vw,51px);margin:22px auto 18px;line-height:1.1}.ecografia_hero__Dy6lv h1 br{display:none}.ecografia_heroLead__n_Dbu{font-size:16px;max-width:500px}.ecografia_heroProof__57elE{font-size:10px;flex-wrap:wrap;gap:8px 12px;max-width:400px;margin:auto}.ecografia_heroProof__57elE span+span:before{display:none}.ecografia_heroImage__fHl_v{width:calc(100% + 24px);max-width:none;margin:16px -12px 10px}.ecografia_heroActions__FLevN{flex-direction:column;gap:19px;margin-bottom:30px}.ecografia_heroActions__FLevN .ecografia_cta__TFWPc{width:100%;max-width:430px;font-size:14px;padding-inline:15px;gap:15px}.ecografia_textLink__o7W_S{font-size:12px}.ecografia_benefitStrip__BAoZ7{grid-template-columns:1fr 1fr;gap:18px 0;padding:24px 0}.ecografia_benefitStrip__BAoZ7 span{font-size:11px;justify-content:flex-start;gap:8px;padding-left:7px}.ecografia_benefitStrip__BAoZ7 span:nth-child(3){border:0}.ecografia_section__31dSq{padding:56px 0}.ecografia_sectionHeading__eW6R0{width:calc(100% - 32px);margin-bottom:28px}.ecografia_section__31dSq h2{font-size:30px;line-height:1.16;letter-spacing:-.035em}.ecografia_sectionHeading__eW6R0 p{font-size:15px}.ecografia_eyebrow__8EO_X{font-size:9px;letter-spacing:.1em;margin-bottom:13px}.ecografia_methodGrid__t5k_J{grid-template-columns:1fr 1fr;gap:12px}.ecografia_methodGrid__t5k_J article{padding:20px 16px}.ecografia_methodGrid__t5k_J article>span{margin-bottom:19px}.ecografia_methodGrid__t5k_J h3{font-size:18px}.ecografia_methodGrid__t5k_J p{font-size:12px}.ecografia_painGrid__3uv7D{grid-template-columns:1fr;gap:28px}.ecografia_painGrid__3uv7D>div>p{font-size:15px}.ecografia_painCards__CzOf0 article{padding:22px}.ecografia_painCards__CzOf0 h3{font-size:18px}.ecografia_productRow__rC3yY{grid-template-columns:1fr;gap:22px;padding:0 0 32px}.ecografia_productRow__rC3yY+.ecografia_productRow__rC3yY{padding-top:30px}.ecografia_productReverse__C5U7i .ecografia_productImage__0vhmx{order:0}.ecografia_productCopy__eTNKg{padding:0 7px}.ecografia_productCopy__eTNKg h3{font-size:27px;margin-bottom:17px}.ecografia_productCopy__eTNKg p{font-size:14px}.ecografia_productCopy__eTNKg>strong{font-size:16px}.ecografia_productImage__0vhmx{max-width:550px;margin-inline:auto}.ecografia_checkList__a4bGu li{font-size:13px}.ecografia_audienceGrid__dwuwT{grid-template-columns:1fr;gap:12px}.ecografia_audienceGrid__dwuwT>div{font-size:14px;padding:20px}.ecografia_bonusGrid__bE6KG{grid-template-columns:1fr;gap:22px;max-width:550px}.ecografia_bonusTop__z8Klu{font-size:9px;padding:17px 20px}.ecografia_bonusCard__Kn__P>div:last-child{padding:0 23px 25px}.ecografia_bonusCard__Kn__P h3{font-size:24px}.ecografia_galleryHeading__17Yo8{margin-top:42px}.ecografia_galleryHeading__17Yo8 h3{font-size:21px}.ecografia_workflow__9a2CY{grid-template-columns:1fr 1fr;gap:26px 20px}.ecografia_workflow__9a2CY h3{font-size:18px;margin:17px 0 8px}.ecografia_workflow__9a2CY p{font-size:13px}.ecografia_planGrid__hvvtA{grid-template-columns:1fr;gap:40px;margin-top:45px;max-width:540px;margin-inline:auto}.ecografia_plan__m2817{padding:28px 23px}.ecografia_plan__m2817 h3{font-size:30px}.ecografia_plan__m2817>p{min-height:0}.ecografia_recommended__Ishmr{font-size:8px;padding:10px 14px}.ecografia_miniBonuses__EJKJZ{grid-template-columns:repeat(2,1fr)}.ecografia_plan__m2817 .ecografia_price__2vGHF{font-size:60px}.ecografia_faqGrid__0Epca{grid-template-columns:1fr;gap:28px}.ecografia_faqGrid__0Epca>div>p{max-width:none}.ecografia_faqItem__frnvC summary{font-size:15px}.ecografia_faqItem__frnvC p{font-size:13px}.ecografia_sectionCta__45kyO .ecografia_cta__TFWPc{font-size:14px;gap:15px;max-width:100%;text-align:center}.ecografia_footer___j6HF{padding:36px 0}.ecografia_footerLine__HuLyL{font-size:10px}.ecografia_footer___j6HF p{font-size:13px}.ecografia_upgradePanel__6f340{padding:32px 22px}.ecografia_upgradePanel__6f340 h2{font-size:26px}.ecografia_modalPrice___E9nn{font-size:12px}.ecografia_modalPrice___E9nn strong{font-size:22px}.ecografia_sampleFigure__eZ_1K{width:174px;flex-basis:174px}.ecografia_sampleFigure__eZ_1K figcaption{font-size:10px}.ecografia_galleryTrack__8UtCe{gap:16px;animation-name:ecografia_marqueeMobile__a5sSo}.ecografia_gallery__FgeDv{margin-top:25px}.ecografia_ebookPreview__C9Fh6{padding:10px;border-radius:14px}.ecografia_ebookPreviewTopline__HCE83{padding:6px 4px 13px;gap:10px}.ecografia_ebookPreviewTopline__HCE83 span{font-size:8px;letter-spacing:.06em}.ecografia_ebookPreviewTopline__HCE83 small{font-size:8px;white-space:nowrap}.ecografia_ebookStage__32Woa{height:380px;border-radius:8px}.ecografia_ebookControls__i_fZE{gap:10px;padding:12px 0 0}.ecografia_ebookControls__i_fZE button{padding:0 13px;font-size:9px;gap:5px}.ecografia_ebookControls__i_fZE strong{font-size:16px}.ecografia_ebookControls__i_fZE small{font-size:7px}.ecografia_ebookControls__i_fZE>div{min-width:80px}.ecografia_ebookCaption__lpzWV{font-size:9px;margin:14px 6px 5px}.ecografia_ebookHint__vp6HP{font-size:7px;top:20px;left:10px;letter-spacing:.02em}.ecografia_ebookCloseButton__TsKJO{font-size:7px;right:8px;top:10px;padding:0 9px}.ecografia_ebookFallback__f2hQO{inset:12px}}@keyframes ecografia_marqueeMobile__a5sSo{to{transform:translateX(calc(-50% - 8px))}}.ecografia_basicCheckout___rooj{display:flex;align-items:center;justify-content:center;min-height:44px;margin-top:14px;padding:10px 4px;text-align:center;font-size:12px;line-height:1.5;color:#416176;text-decoration:underline;text-underline-offset:3px}.ecografia_basicCheckout___rooj:hover{color:#007f9d}.ecografia_basicCheckout___rooj:focus-visible{outline:2px solid #007f9d;outline-offset:3px;border-radius:4px}@media(max-width:380px){.ecografia_hero__Dy6lv h1{font-size:33px}.ecografia_brand__ggGLr,.ecografia_headerLink__Pg5xz{font-size:10px}.ecografia_ebookControls__i_fZE button span{display:none}.ecografia_ebookStage__32Woa{height:345px}.ecografia_plan__m2817{padding:26px 18px}.ecografia_priceBlock__pTBb0 button{font-size:13px}.ecografia_heroProof__57elE{font-size:9px}.ecografia_benefitStrip__BAoZ7 span{font-size:10px}}@media(prefers-reduced-motion:reduce){.ecografia_gallery__FgeDv{overflow-x:auto}.ecografia_galleryTrack__8UtCe{animation:none}.ecografia_ebookOpenButtonLeaving__iqQJs{display:none}}.ecografia_planExtraNote__s_n23{padding:13px 10px;background:#edf8fb;text-align:center;font-size:11px;color:#17647a;border-top:1px solid #daeaf0;font-weight:600}.ecografia_extrasLabel__wYk_C{font-size:9px;letter-spacing:.1em;color:#56768a;margin:0 0 4px}.ecografia_excludedList__2WiYM li{color:#758895}.ecografia_excludedList__2WiYM li:before{content:"—";color:#8e9faa}.ecografia_plan__m2817 .ecografia_excludedList__2WiYM{margin-bottom:30px}.ecografia_painSection__ekV40{background:#f3f9fc;border-block:1px solid #dae9f0}.ecografia_painSection__ekV40 .ecografia_painGrid__3uv7D>div>p{color:#466174;line-height:1.7}.ecografia_painSection__ekV40 .ecografia_painCards__CzOf0 article{background:#fff;border-color:#d4e5ee;box-shadow:0 6px 24px #07355206}.ecografia_painSection__ekV40 .ecografia_painCards__CzOf0 h3{color:#073852}.ecografia_painSection__ekV40 .ecografia_painCards__CzOf0 p{color:#476476;line-height:1.65}.ecografia_painSection__ekV40 .ecografia_painCards__CzOf0 span{color:#007e90}.ecografia_painLink__49CbS{display:inline-block;color:#006b80;font-size:14px;line-height:1.6;text-underline-offset:5px;margin-top:8px}.ecografia_priceBlock__pTBb0 .ecografia_upgradeValue__ZhGke{display:grid;gap:5px;border:1px solid #b8e0e7;border-radius:8px;background:#ecf9fb;padding:13px 15px;margin:14px 0 18px;color:#005a6c;font-size:13px;line-height:1.5}.ecografia_upgradeValue__ZhGke span{font-size:12px;color:#456475}@media(max-width:760px){.ecografia_painSection__ekV40 .ecografia_painGrid__3uv7D{gap:26px}.ecografia_painLink__49CbS{font-size:13px}}.reading-section_section__B7fQl{padding:64px 0;background:#062a43;color:#fff;border-bottom:3px solid #20c8db}.reading-section_grid__d7yVY{width:min(1060px,calc(100% - 48px));margin:auto;display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);grid-template-areas:"visual intro" "visual steps" "visual link";column-gap:56px;row-gap:22px;align-content:center;align-items:start}.reading-section_intro___XJJU{grid-area:intro;align-self:end}.reading-section_eyebrow__U4mYj{display:block;color:#7ce2ed;font-size:10px;font-weight:750;letter-spacing:.14em;margin-bottom:16px}.reading-section_intro___XJJU h2{font-size:clamp(28px,3.2vw,42px);line-height:1.13;letter-spacing:-.035em;margin:0 0 18px}.reading-section_intro___XJJU h2 em{font-style:normal;color:#6cdee9}.reading-section_intro___XJJU>p{font-size:16px;line-height:1.6;color:#c1d7e4;margin:0}.reading-section_visual__u3PUN{grid-area:visual;margin:0;background:#10384f;padding:16px;border:1px solid #386075;border-radius:14px;align-self:center;box-shadow:0 16px 35px #001a2c40}.reading-section_frameLabel__bVqIz{display:flex;justify-content:space-between;gap:12px;margin:2px 1px 14px;color:#9ddce8;font-size:9px;letter-spacing:.1em;font-weight:700}.reading-section_visual__u3PUN a{display:block;background:#fff;border-radius:5px;overflow:hidden}.reading-section_visual__u3PUN img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain}.reading-section_visual__u3PUN figcaption{display:flex;flex-direction:column;gap:7px;font-size:12px;line-height:1.4;color:#c1dbe7;padding:15px 2px 1px}.reading-section_visual__u3PUN figcaption span{font-size:8px;letter-spacing:.13em;color:#78ddeb;font-weight:750}.reading-section_steps__CdwQm{grid-area:steps;list-style:none;padding:0;margin:0}.reading-section_steps__CdwQm li{display:flex;gap:16px;padding:20px 0;border-top:1px solid #37596e}.reading-section_steps__CdwQm li:last-child{border-bottom:1px solid #37596e}.reading-section_number__DaLKb{flex:0 0 32px;height:32px;display:grid;place-items:center;font-size:11px;border:1px solid #388b9f;border-radius:50%;color:#87e2ed;background:#10394e}.reading-section_steps__CdwQm h3{font-size:18px;letter-spacing:-.02em;margin:1px 0 8px;line-height:1.2}.reading-section_steps__CdwQm p{font-size:14px;line-height:1.5;color:#bcd4e3;margin:0}.reading-section_link__Fhi1q{grid-area:link;display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid #4db7c9;border-radius:8px;padding:16px 18px;min-height:52px;text-decoration:none;color:#9beef4;font-size:13px;font-weight:650;background:#0d3c52;align-self:start}.reading-section_link__Fhi1q:hover{background:#144b61}.reading-section_link__Fhi1q span{font-size:20px}@media(max-width:1000px){.reading-section_grid__d7yVY{column-gap:30px}.reading-section_intro___XJJU h2{font-size:32px}.reading-section_intro___XJJU>p{font-size:15px}.reading-section_steps__CdwQm li{padding:17px 0}}@media(max-width:760px){.reading-section_section__B7fQl{padding:44px 0}.reading-section_grid__d7yVY{width:calc(100% - 32px);max-width:500px;grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "visual" "steps" "link";gap:24px}.reading-section_intro___XJJU h2{font-size:31px}.reading-section_eyebrow__U4mYj{font-size:9px}.reading-section_visual__u3PUN{width:100%;max-width:420px;justify-self:center;padding:13px}.reading-section_frameLabel__bVqIz{font-size:8px}.reading-section_visual__u3PUN figcaption{font-size:11px;padding-top:12px}.reading-section_steps__CdwQm li{padding:18px 0}.reading-section_steps__CdwQm h3{font-size:18px}.reading-section_steps__CdwQm p{font-size:14px}.reading-section_link__Fhi1q{font-size:12px;padding:14px;gap:12px}}.sample-gallery_gallery__MfZWq:focus-within>div:first-child{animation-play-state:paused}.sample-gallery_open__J2YoJ{padding:0;cursor:zoom-in;display:block}.sample-gallery_zoom__5Yhpq{position:absolute;right:8px;bottom:8px;border-radius:20px;padding:6px 10px;background:#062b43;color:white;font-size:11px;font-weight:700;opacity:0;transition:opacity .2s}.sample-gallery_open__J2YoJ:focus-visible .sample-gallery_zoom__5Yhpq,.sample-gallery_open__J2YoJ:hover .sample-gallery_zoom__5Yhpq{opacity:1}.sample-gallery_gallery__MfZWq .sample-gallery_hint__B9T6j{background:transparent;color:#376077;width:100%}.sample-gallery_dialog__eG53Y{margin:auto;padding:0;border:1px solid #b2cad6;border-radius:16px;width:min(960px,96vw);max-width:96vw;max-height:94dvh;background:#f5fafc;color:#102b42;box-shadow:0 24px 90px #00152666}.sample-gallery_dialog__eG53Y::backdrop{background:#011626d9;backdrop-filter:blur(5px)}.sample-gallery_panel__9kMjn{display:flex;flex-direction:column;max-height:92dvh}.sample-gallery_header__ScAZm{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 22px;border-bottom:1px solid #d1e1e9}.sample-gallery_header__ScAZm small{font-size:10px;letter-spacing:.12em}.sample-gallery_header__ScAZm h3{font-size:20px;line-height:1.2;margin:5px 0 0}.sample-gallery_controls__iq_1_ button,.sample-gallery_header__ScAZm button{font:inherit;color:inherit;cursor:pointer;border:1px solid #bdd1dd;background:#fff;border-radius:8px;padding:9px 12px;white-space:nowrap}.sample-gallery_image__yGPXq{overflow:auto;min-height:0;padding:12px;background:#dce8ee}.sample-gallery_image__yGPXq img{display:block;width:100%;height:auto}.sample-gallery_controls__iq_1_{display:flex;align-items:center;justify-content:space-between;padding:12px 22px;gap:10px}.sample-gallery_controls__iq_1_ span{font-size:13px}@media(max-width:600px){.sample-gallery_controls__iq_1_,.sample-gallery_header__ScAZm{padding:12px}.sample-gallery_header__ScAZm h3{font-size:17px}.sample-gallery_image__yGPXq{padding:0}.sample-gallery_zoom__5Yhpq{opacity:1;font-size:10px;padding:4px 8px}}.sample-gallery_pause__Y2ImC{display:block;margin:13px auto 0;padding:8px 13px;font-size:11px;letter-spacing:0;font-weight:500;border:1px solid #bfd6e1;border-radius:20px;background:#fff;color:#27556d;min-height:36px}
+[hidden]{display:none!important}html{scroll-behavior:smooth}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:3px solid #d3a646;outline-offset:5px}.ecografia_brand__ggGLr{max-width:280px}.sample-book-stage{position:relative;display:flex;justify-content:center;align-items:center;min-height:520px;padding:40px 20px 55px;perspective:1600px;background:radial-gradient(ellipse at center,#e6eff6,transparent 70%)}.book-cover{position:relative;display:flex;flex-direction:column;align-items:center;gap:18px;width:320px;min-height:440px;padding:32px 24px 26px;border:1px solid #b69a58;border-left:12px solid #041b30;border-radius:3px 9px 9px 3px;background:linear-gradient(125deg,#0d304c,#03182d);color:#f1d58c;box-shadow:12px 14px 0 -5px #e5dfd2,17px 18px 0 -6px #fff,25px 27px 40px #07243c35;transform:rotateY(-12deg) rotateZ(-3deg);cursor:pointer;transition:transform .35s}.book-cover:hover{transform:rotateY(-5deg) rotateZ(-1deg) translateY(-4px)}.cover-kicker{font-size:10px;letter-spacing:2px;line-height:1.6}.book-cover strong{font-family:Georgia,serif;font-size:28px;line-height:1.15}.book-cover img{width:180px;height:225px;object-fit:cover;border:1px solid #b69a58;border-radius:3px}.cover-bottom{font-size:10px;letter-spacing:2px;border-top:1px solid #b69a58;padding-top:15px;width:100%}.book-spread{display:flex;width:min(100%,850px);box-shadow:0 18px 40px #071d3340;animation:bookReveal .4s ease-out}.book-page{border:0;padding:0;width:50%;background:#fff;cursor:zoom-in;position:relative}.book-page img{display:block;width:100%;height:auto}.book-page:first-child:after{content:'';position:absolute;right:0;top:0;bottom:0;width:20px;background:linear-gradient(90deg,transparent,#03172c28);pointer-events:none}.book-page:last-child:after{content:'';position:absolute;left:0;top:0;bottom:0;width:15px;background:linear-gradient(90deg,#03172c20,transparent);pointer-events:none}.book-close{position:absolute;right:18px;bottom:14px;border:0;border-radius:20px;background:#092b46;color:white;padding:9px 15px;font-size:12px;cursor:pointer}.ecografia_ebookControls__i_fZE button:disabled{opacity:.35;cursor:default}#sample-dialog::backdrop,#upgrade-dialog::backdrop{background:#031526c9;backdrop-filter:blur(5px)}#sample-origin{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#467086}#sample-title{font-size:16px;margin:4px 0 0}#sample-close{border:0;background:#e9f1f6;color:#0b2b44;border-radius:50%;width:34px;height:34px;font-size:24px;cursor:pointer;flex-shrink:0}#sample-scroll{overscroll-behavior:contain}#sample-full{cursor:zoom-in;display:block}#sample-full.zoomed{width:1122px;max-width:none;cursor:zoom-out}.sample-gallery_controls__iq_1_ button{border:1px solid #cfdee8;border-radius:7px;background:white;padding:9px 14px;color:#153b56;cursor:pointer}.sample-gallery_controls__iq_1_ button:disabled{opacity:.35}#sample-count{font-size:12px;color:#567283}.ecografia_heroImage__fHl_v{object-fit:contain}#sample-dialog{border:0;border-radius:14px;padding:0}#upgrade-dialog{border:0}dialog:not([open]){display:none}body.modal-open{overflow:hidden}@keyframes bookReveal{from{opacity:0;transform:rotateY(-8deg) scale(.98)}to{opacity:1;transform:none}}@media(max-width:640px){.sample-book-stage{min-height:410px;padding:20px 8px 50px}.book-cover{width:260px;min-height:350px;padding:22px 18px;gap:12px}.book-cover strong{font-size:24px}.book-cover img{width:144px;height:180px}.book-page{width:100%}#book-right{display:none}.book-spread{max-width:400px}.sample-gallery_header__ScAZm{padding:14px!important}#sample-title{font-size:14px}.sample-gallery_controls__iq_1_{gap:8px;padding:10px!important}.sample-gallery_controls__iq_1_ button{font-size:12px;padding:9px}.ecografia_ebookControls__i_fZE{gap:8px!important}.ecografia_ebookControls__i_fZE button{font-size:10px!important;padding:10px!important}.ecografia_brand__ggGLr{max-width:205px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}@media(max-width:640px){}
+#sample-dialog{overflow:hidden}.sample-gallery_header__ScAZm>div{min-width:0}#sample-close{padding:0;line-height:1;display:grid;place-items:center}#sample-title{overflow-wrap:anywhere}.sample-gallery_panel__9kMjn{width:100%;min-width:0}.sample-gallery_controls__iq_1_{flex-shrink:0}
+
+/* Same two continuous galleries as the reference, without scrollbars. */
+.ecografia_gallery__FgeDv{overflow:hidden!important;touch-action:pan-y}
+.ecografia_galleryTrack__8UtCe{animation-play-state:running}
+.ecografia_gallery__FgeDv[data-paused="true"] .ecografia_galleryTrack__8UtCe{animation-play-state:paused!important}
+.ecografia_gallery__FgeDv[data-paused="false"]:not(:hover):not(:focus-within) .ecografia_galleryTrack__8UtCe{animation-play-state:running}
+.ecografia_galleryItem___R8M_ img{display:block}
+.book-page[aria-busy="true"]{cursor:progress}
+@media(prefers-reduced-motion:reduce){.ecografia_gallery__FgeDv{overflow:hidden!important}.ecografia_galleryTrack__8UtCe{animation:none!important}.ecografia_gallery__FgeDv[data-paused="false"] .ecografia_galleryTrack__8UtCe{animation:ecografia_marquee__hJDH2 145s linear infinite!important}}
+/* Consistent image space for the four Italian resource mockups. */
+#bonus article > img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;background:#fff}
+
+/* Real, unmodified Italian PDF pages in the product compositions. */
+.mockup-real{position:relative;isolation:isolate;display:block;overflow:visible;background:#fff;line-height:0}
+.mockup-real .mockup-real__base{display:block;width:100%;height:100%;margin:0;object-fit:contain;position:absolute;inset:0;pointer-events:none;user-select:none}
+.mockup-real--collection{aspect-ratio:1.34/1}
+.mockup-real--collection .mockup-real__base{height:auto;max-height:100%;object-position:top;top:0}
+.mockup-real__pages{position:absolute;inset:0;pointer-events:none}
+.mockup-real .mockup-real__sheet{position:absolute;padding:clamp(2px,.6vw,7px);background:#fff;border:1px solid #e3e9ef;border-radius:3px;box-shadow:0 14px 24px #09283c2b,0 2px 5px #09283c17;overflow:hidden;line-height:0;transform-origin:50% 80%}
+.mockup-real .mockup-real__sheet img{display:block;width:100%;height:auto;aspect-ratio:1122/1402;object-fit:contain;margin:0;border:0;border-radius:0;max-width:100%}
+.mockup-real--collection .mockup-real__sheet{width:24%;bottom:2%;z-index:2}
+.mockup-real--collection .mockup-real__sheet--1{left:8%;transform:rotate(-9deg);z-index:2}
+.mockup-real--collection .mockup-real__sheet--2{left:38%;bottom:0;transform:rotate(1.5deg);z-index:3}
+.mockup-real--collection .mockup-real__sheet--3{right:6%;transform:rotate(8deg);z-index:2}
+.mockup-real--single{aspect-ratio:1/1;width:100%}
+.mockup-real--single .mockup-real__base{clip-path:polygon(0 0,64% 0,64% 100%,0 100%)}
+.mockup-real--wide .mockup-real__base{clip-path:polygon(0 0,54% 0,54% 100%,0 100%)}
+.mockup-real--single .mockup-real__sheet{width:35%;right:3%;z-index:2}
+.mockup-real--single .mockup-real__sheet--1{top:2%;transform:rotate(5deg)}
+.mockup-real--single .mockup-real__sheet--2{bottom:4%;right:7%;transform:rotate(-5deg);z-index:3}
+.mockup-real--complete{aspect-ratio:1.28/1}
+.mockup-real--complete .mockup-real__sheet{bottom:5%;width:24%}
+.mockup-real--complete .mockup-real__sheet--2{bottom:3%}
+.mockup-real__total{position:absolute;z-index:5;left:50%;bottom:-1%;transform:translateX(-50%);display:block;white-space:nowrap;line-height:1;padding:9px 18px;border:1px solid #bc9c55;background:#fffaf0;border-radius:5px;box-shadow:0 4px 12px #09283c20;color:#112d44;font-family:Georgia,serif;font-size:clamp(11px,1.8vw,22px);font-weight:700}
+@media(max-width:640px){.mockup-real__total{font-size:14px;padding:7px 13px}.mockup-real .mockup-real__sheet{box-shadow:0 7px 15px #09283c26;padding:3px}}
+/* Keep the original plaque behind the real pages from showing between sheets. */
+.mockup-real--complete .mockup-real__base{clip-path:inset(0 0 24% 0)}
+
+/* Explicit grid-item width keeps the positioned mockup layers visible on narrow screens. */
+.ecografia_productRow__rC3yY > .ecografia_productImage__0vhmx{width:100%;min-width:0;justify-self:stretch}
+
+
+/* ==========================================================================
+   ATLAS VISUAL DE URINÁLISE — OVERRIDES & INTERACTIVE DESIGN COMPONENTS
+   ========================================================================== */
+
+:root {
+  --navy: #052a44;
+  --cyan: #00c5dc;
+  --teal: #007f9d;
+  --ink: #102b42;
+  --muted: #586e7f;
+  --line: #dbe6ee;
+  --border-light: #dbe6ee;
+  --navy-900: #052a44;
+  --text-body: #102b42;
+  --text-muted: #586e7f;
+  --green-cta: #10b981;
+  --amber-500: #f59e0b;
+  --bg-cream: #f4f9fc;
+  --shadow-sm: 0 6px 18px rgba(5, 42, 68, 0.06);
+  --shadow-md: 0 14px 32px rgba(5, 42, 68, 0.12);
+}
+
+/* Ensure body always scrolls vertically */
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Keep un-clipped 3D book mockups visible while fanning real PDF sheets */
+.mockup-real {
+  border-radius: 16px;
+  background: linear-gradient(145deg, #f3f8fc, #e7f0f7);
+}
+.mockup-real--single .mockup-real__base,
+.mockup-real--wide .mockup-real__base,
+.mockup-real--complete .mockup-real__base {
+  clip-path: none !important;
+}
+.mockup-real--single .mockup-real__base {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+.mockup-real--collection .mockup-real__base {
+  object-fit: cover;
+  border-radius: 16px;
+}
+.mockup-real--single .mockup-real__sheet {
+  width: 33%;
+  right: 3%;
+  z-index: 2;
+}
+
+/* Subtle Laboratory Glass Slide Finish (Ideia 4) */
+.ecografia_painCards__CzOf0 article,
+.ecografia_methodGrid__t5k_J article,
+.ecografia_bonusCard__Kn__P,
+.ecografia_plan__m2817,
+.lab-glass-card {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 10px 28px rgba(5, 42, 68, 0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.ecografia_painCards__CzOf0 article:hover,
+.ecografia_methodGrid__t5k_J article:hover,
+.ecografia_bonusCard__Kn__P:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 16px 36px rgba(5, 42, 68, 0.11);
+  border-color: #b8d4e3;
+}
+
+/* Top navigation bar links */
+.topbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.topbar-nav a:not(.ecografia_cta__TFWPc) {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+.topbar-nav a:not(.ecografia_cta__TFWPc):hover {
+  color: var(--teal);
+}
+@media (max-width: 860px) {
+  .topbar-nav .hide-mobile {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   IDEIA 1: OCULAR DE MICROSCÓPIO INTERATIVA (100x vs 400x)
+   ========================================================================== */
+.ocular-section {
+  padding: 84px 0;
+  background: radial-gradient(circle at 20% 20%, #0b395c 0%, #052238 55%, #031524 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+.ocular-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+@media (max-width: 920px) {
+  .ocular-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+.ocular-controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 20px;
+}
+.ocular-btn {
+  padding: 11px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(118, 227, 237, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+  color: #d6eef5;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.ocular-btn:hover {
+  background: rgba(0, 197, 220, 0.15);
+  border-color: #69e3ed;
+}
+.ocular-btn[aria-selected="true"] {
+  background: linear-gradient(135deg, #00c5dc, #008eb0);
+  color: #031829;
+  border-color: #9cf0f4;
+  box-shadow: 0 0 24px rgba(0, 197, 220, 0.38);
+}
+.ocular-stage-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ocular-lens-frame {
+  position: relative;
+  width: min(100%, 410px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 14px;
+  background: linear-gradient(145deg, #1b4969, #041320);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.55),
+    inset 0 2px 4px rgba(255, 255, 255, 0.22),
+    0 0 0 1px rgba(105, 227, 237, 0.24);
+}
+.ocular-viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #081e30;
+  border: 2px solid rgba(105, 227, 237, 0.35);
+}
+.ocular-viewport img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  transform: scale(1.06);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), filter 0.35s ease;
+}
+.ocular-viewport[data-mag="400x"] img {
+  transform: scale(1.38);
+}
+.ocular-viewport[data-focus="fine"] img {
+  filter: contrast(1.09) saturate(1.08);
+}
+/* Optical reticle overlay */
+.ocular-reticle {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  box-shadow: inset 0 0 55px rgba(2, 14, 24, 0.72);
+}
+.ocular-reticle::before,
+.ocular-reticle::after {
+  content: '';
+  position: absolute;
+  background: rgba(105, 227, 237, 0.28);
+}
+.ocular-reticle::before {
+  top: 50%;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+}
+.ocular-reticle::after {
+  left: 50%;
+  top: 12%;
+  bottom: 12%;
+  width: 1px;
+}
+.ocular-hud-top {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(3, 21, 36, 0.82);
+  border: 1px solid rgba(105, 227, 237, 0.35);
+  color: #84ebff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 5px 14px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.ocular-hud-bottom {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(3, 21, 36, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.ocular-info-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(118, 227, 237, 0.22);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 18px;
+  backdrop-filter: blur(8px);
+}
+.ocular-info-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+.ocular-info-card p {
+  font-size: 14.5px;
+  color: #c2dce8;
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+.ocular-Checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.ocular-Checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #e4f3f8;
+}
+.ocular-Checklist li b {
+  color: #69e3ed;
+}
+
+/* ==========================================================================
+   IDEIA 2: COMPARADOR LADO A LADO INTERATIVO
+   ========================================================================== */
+.comp-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.comp-tab-btn {
+  padding: 11px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.comp-tab-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.comp-tab-btn[aria-selected="true"] {
+  background: var(--navy);
+  color: #ffffff;
+  border-color: var(--navy);
+  box-shadow: 0 8px 20px rgba(5, 42, 68, 0.18);
+}
+.comp-panel {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 34px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: inset 0 1px 0 #fff, 0 16px 40px rgba(5, 42, 68, 0.07);
+}
+@media (max-width: 900px) {
+  .comp-panel {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+}
+.comp-page-preview {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #f4f9fc;
+  box-shadow: 0 12px 28px rgba(5, 42, 68, 0.1);
+}
+.comp-page-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+}
+.comp-vs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 18px 0;
+}
+@media (max-width: 560px) {
+  .comp-vs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.comp-vs-box {
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8fcff;
+  border: 1px solid #d7e6f0;
+}
+.comp-vs-box span {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+.comp-vs-box h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0 0 6px;
+}
+.comp-vs-box p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.55;
+}
+.comp-alert-box {
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: #fff9eb;
+  border: 1px solid #f2d99b;
+  font-size: 13.5px;
+  color: #5c4308;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+.comp-alert-box strong {
+  color: #3d2b02;
+}
+
+/* ==========================================================================
+   IDEIA 3: SIMULADOR INTERATIVO DA TIRA REAGENTE × SEDIMENTO
+   ========================================================================== */
+.dipstick-wrapper {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: inset 0 1px 0 #fff, 0 14px 36px rgba(5, 42, 68, 0.06);
+}
+.dipstick-strip-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: linear-gradient(180deg, #fafdff, #eef5fa);
+  border: 1px solid #cfdpe6;
+  border-radius: 14px;
+  overflow-x: auto;
+  margin-bottom: 28px;
+  box-shadow: inset 0 2px 5px rgba(5, 42, 68, 0.05);
+}
+.dipstick-pad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: #ffffff;
+  cursor: pointer;
+  min-width: 92px;
+  flex-shrink: 0;
+  transition: all 0.18s ease;
+  box-shadow: 0 2px 6px rgba(5, 42, 68, 0.06);
+}
+.dipstick-pad:hover {
+  transform: translateY(-2px);
+  border-color: #b7d7e8;
+}
+.dipstick-pad[aria-selected="true"] {
+  border-color: var(--navy);
+  background: #f0f9fc;
+  box-shadow: 0 6px 16px rgba(5, 42, 68, 0.12);
+}
+.dipstick-swatch {
+  width: 44px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+.dipstick-pad strong {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--navy);
+}
+.dipstick-pad small {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.dipstick-detail-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 32px;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .dipstick-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.dipstick-cards-col {
+  display: grid;
+  gap: 14px;
+}
+.dipstick-info-item {
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #f8fcff;
+  border: 1px solid var(--line);
+}
+.dipstick-info-item span {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 4px;
+}
+.dipstick-info-item p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   TESTIMONIALS MARQUEE CAROUSEL (from site sobrevivencia/Inglês/testimonials)
+   ========================================================================== */
+#testimonials {
+  padding: 84px 0;
+  background: #FFFFFF;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
+  position: relative;
+}
+.testimonials-header {
+  max-width: 760px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+.testimonials-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: #edfafd;
+  border: 1px solid #c4e6ee;
+  color: #1b637c;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+.testimonials-marquee-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 0;
+}
+.testimonials-fade-left,
+.testimonials-fade-right {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  z-index: 10;
+}
+.testimonials-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #FFFFFF 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+}
+.testimonials-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #FFFFFF 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+}
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.testimonials-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  padding: 0 16px;
+  animation: marqueeScroll 55s linear infinite;
+  will-change: transform;
+  cursor: grab;
+}
+.testimonials-track:hover {
+  animation-play-state: paused;
+}
+.t-card {
+  width: 390px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+.t-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: #b7d7e8;
+  transform: translateY(-2px);
+}
+.t-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.t-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.t-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+.t-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.t-flag {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  font-size: 11px;
+  background: #FFFFFF;
+  border-radius: 999px;
+  padding: 1px 4px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.t-name-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--navy-900);
+  line-height: 1.2;
+}
+.t-verified-dot {
+  color: var(--green-cta);
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.t-location {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+.t-profile {
+  font-size: 11px;
+  color: var(--teal);
+  font-weight: 600;
+  margin-top: 2px;
+}
+.t-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--bg-cream);
+  border: 1px solid var(--border-light);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--amber-500);
+  flex-shrink: 0;
+}
+.t-headline {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin-bottom: 10px;
+  line-height: 1.38;
+}
+.t-quote {
+  font-size: 13.5px;
+  color: var(--text-body);
+  line-height: 1.62;
+  margin-bottom: 20px;
+}
+.t-footer {
+  padding-top: 12px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.t-context-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #006b86;
+  background: rgba(0, 197, 220, 0.12);
+  border: 1px solid rgba(0, 197, 220, 0.25);
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 230px;
+}
+.t-verified-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--green-cta);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.testimonials-stats-bar {
+  margin-top: 38px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-light);
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.testimonials-stats-bar strong {
+  color: var(--navy-900);
+}
+@media (max-width: 640px) {
+  .t-card { width: 320px; padding: 20px; }
+  .testimonials-fade-left, .testimonials-fade-right { width: 32px; }
+}
+
+/* Single Offer Card & Bonus Free Pill */
+.ecografia_planGrid__hvvtA--single {
+  grid-template-columns: minmax(0, 720px) !important;
+  justify-content: center;
+  margin-inline: auto;
+}
+.bonus-free-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 197, 220, 0.16);
+  border: 1px solid rgba(0, 197, 220, 0.48);
+  color: #69e3ed;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+.price-anchor-strike {
+  display: block;
+  font-size: 14px;
+  color: #9ec0d2;
+  margin-bottom: 4px;
+}
+.price-anchor-strike s {
+  color: #ff8585;
+  font-weight: 700;
+}

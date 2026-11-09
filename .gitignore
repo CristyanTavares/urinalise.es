@@ -1,0 +1,12 @@
+node_modules/
+Entregavel/
+Entreg*/
+entregavel.zip
+/*.zip
+ref/
+/*.png
+/Atlas de Urin*
+/contexto.md
+assets/samples/sample_data.json
+.DS_Store
+Thumbs.db
