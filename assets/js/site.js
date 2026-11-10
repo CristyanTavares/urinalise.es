@@ -691,7 +691,7 @@
      REDIRECCIÓN CON PASO FORZADO DE PARÁMETROS DE URL
      (window.location.search -> window.location.href)
      ======================================================================== */
-  const CHECKOUT_BASE_URL = 'https://pay.wiapy.com/6af0fe1d371815cbecca139b';
+  const CHECKOUT_BASE_URL = 'https://pay.hotmart.com/C108420263V?checkoutMode=10';
 
   function buildUrlWithParams(targetUrl) {
     const base = targetUrl || CHECKOUT_BASE_URL;
@@ -722,7 +722,7 @@
   };
 
   function setupRedirects() {
-    const redirectLinks = document.querySelectorAll('a[href*="pay.wiapy.com"], #cta-checkout, [data-checkout]');
+    const redirectLinks = document.querySelectorAll('a[href*="hotmart.com"], a[href*="pay.wiapy.com"], #cta-checkout, [data-checkout]');
     redirectLinks.forEach(link => {
       const targetUrl = link.getAttribute('href') || CHECKOUT_BASE_URL;
       link.href = buildUrlWithParams(targetUrl);
